@@ -1,0 +1,52 @@
+.search {
+    background-image: url('https://picsum.photos/1200/800');
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+}
+
+.brand {
+    background-image: url('https://picsum.photos/1200/800');
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+}
+
+.info-social {
+    height: 84px;
+    margin-top: -15px;
+}
+
+.info2 {
+    border-bottom: 1px solid #0000001f;
+    height: 50px;
+}
+
+@media (max-width: 991.98px) {
+    .info-social {
+        height: 250px;
+        margin-top: -15px;
+    }
+    .info2 {
+        border-bottom: 1px solid #0000001f;
+        height: 185px;
+    }
+}
+
+.info-brand {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #0000001f;
+}
+
+.grid-bacheca {
+    margin-top: 65px;
+}
+
+@include media-breakpoint-up(lg) {
+    .grid-bacheca {
+        margin-left: 160px;
+    }
+}

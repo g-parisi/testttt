@@ -1,0 +1,1034 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../../../favicon.ico"> -->
+
+    <title>Test</title>
+
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- Custom styles for this template -->
+    <!-- <link href="pricing.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link href="./css/main.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+    <style>
+        .avatar-upload {
+            position: relative;
+            max-width: 205px;
+            margin: 50px auto;
+        }
+        
+        .avatar-upload .avatar-edit {
+            position: absolute;
+            right: 12px;
+            z-index: 1;
+            top: 10px;
+        }
+        
+        .avatar-upload .avatar-edit input {
+            display: none;
+        }
+        
+        .avatar-upload .avatar-edit input+label {
+            display: inline-block;
+            width: 34px;
+            height: 34px;
+            margin-bottom: 0;
+            border-radius: 100%;
+            background: #FFFFFF;
+            border: 1px solid transparent;
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+            cursor: pointer;
+            font-weight: normal;
+            transition: all 0.2s ease-in-out;
+        }
+        
+        .avatar-upload .avatar-edit input+label:hover {
+            background: #f1f1f1;
+            border-color: #d6d6d6;
+        }
+        
+        .avatar-upload .avatar-edit input+label:after {
+            content: "\f040";
+            font-family: 'FontAwesome';
+            color: #757575;
+            position: absolute;
+            top: 10px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            margin: auto;
+        }
+        
+        .avatar-upload .avatar-preview {
+            width: 100%;
+            height: 300px;
+            position: relative;
+            border-radius: 10px;
+            border: 6px solid #F8F8F8;
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+        }
+        
+        .avatar-upload .avatar-preview>div {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Back to top button -->
+    <div class="to-top2">
+        <div class='to-top'>
+            <a class='back-to-top ion-chevron-up' href='#'></a>
+        </div>
+    </div>
+    <div class="new-post" id="myBtn2">
+        <img class="plusser" src="./img/feather.png">
+    </div>
+
+
+    <!-- Fixed navbar -->
+    <nav class="nav1 navbar navbar-expand-md navbar-light fixed-top bg-white">
+
+        <div class="container w-100">
+            <div class="col-2">
+                <a class="navbar-brand" href="bacheca.html">Genial PaGe</a>
+            </div>
+            <div class="col-7 d-flex w-100">
+                <div class="sear w-100">
+                    <form class="form-inline">
+                        <input class="form-control search2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn-blue-search" type="submit"><img class="cercaa" src="./img/search.svg"
+                                width="20"></button>
+                    </form>
+                </div>
+
+            </div>
+            <div class="col-3 nav-col">
+                <img class="avatarrr" onclick="location.href='brand.html';" src="./img/profile.png" width="40" height="40">
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <!-- <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">sdb</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+    </div>
+    <section id="navbar" class="mobile-top-nav">
+        <div class="d-flex text-center mt-2">
+            <div class="col">
+                <div class="camera"></div>
+            </div>
+            <div class="col">
+                &nbsp;
+            </div>
+            <div class="col">
+                &nbsp;
+            </div>
+            <div class="col">
+                &nbsp;
+            </div>
+            <div class="col">
+                &nbsp;
+            </div>
+            <div class="col">
+                <div class="otion"></div>
+            </div>
+        </div>
+    </section>
+    <section class="mobile-bottom-nav">
+        <div class="d-flex text-center mt-2">
+            <div class="col">
+                <div class="homer"></div>
+            </div>
+            <div class="col">
+                <div class="searcherf"></div>
+            </div>
+            <div class="col">
+                <div class="plussa"></div>
+            </div>
+            <div class="col">
+                <div class="alerta"></div>
+            </div>
+            <div class="col">
+                <div class="chatta"></div>
+            </div>
+            <div class="col">
+                <img class="ventisei" src="https://picsum.photos/26/26" alt="avatar">
+            </div>
+        </div>
+
+    </section>
+    </header>
+    <main role="main" class="flex-shrink-0">
+
+        <section class="grid-bacheca">
+            <div class="container spec">
+                <div class="row">
+                    <div class="col-6 ultimi-post">
+                        <div class="card4 crea">
+                            <div class="titler12">
+                                <h1 class="scriv">Crea un Post!</h1>
+                            </div>
+                            <div class="d-flex text-center">
+                                <div class="col-2">
+                                    <img class="avatar-s" src="https://picsum.photos/80/80">
+                                </div>
+                                <div class="col-70 d-flex">
+                                    <button class="btn-scrivi" id="myBtn2" type="button">Cosa pubblichi oggi?</button>
+                                    <div class="foto"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card4s d-block">
+                            <div class="card-bacheca">
+                                <div class="d-flex">
+                                    <div class="col-6">
+                                        <div class="col titl">
+                                            <div class="d-flex">
+                                                <img class="logomod" src="https://picsum.photos/60/60">
+                                                <div class="d-block mt-1 ml-2">
+                                                    <p class="p-title">Ferrari</p>
+                                                    <p class="p-sub">Roma,Italia -4 giu 2019</p>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+
+                                    </div>
+                                </div>
+                                <img class="post-img-b" src="https://picsum.photos/545/400">
+                                <p class="pino p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, architecto eius! Ipsum nesciunt libero soluta, pariatur vero nam laudantium consectetur provident quia, dignissimos odit? Consequuntur soluta pariatur ut ea
+                                    repellat a voluptatibus laboriosam veritatis consectetur! Culpa repellat quibusdam enim aperiam.</p>
+                                <div class="container">
+                                    <div class="soc d-flex">
+                                        <div class="container">
+                                            <div class="container">
+                                                <div class="container d-flex border-t2">
+                                                    <div class="col d-flex w-100">
+                                                        <div style="margin: 0 auto;">
+                                                            <div class="d-flex">
+                                                                <img class="hg heart" src="./img/love.svg" width="30" height="30">
+                                                                <p class="ml-1">321</p>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col d-flex w-100">
+                                                        <div style="margin: 0 auto;">
+                                                            <div class="d-flex">
+                                                                <img class="hg cha" src="./img/chat.svg" width="25" height="25">
+                                                                <p class="ml-1">22</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col d-flex w-100">
+                                                        <div style="margin: 0 auto;">
+                                                            <div class="d-flex">
+                                                                <img class="hg paper" src="./img/condi.png" width="23" height="23">
+                                                                <p class="ml-1">14</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="card-bacheca">
+                                <div class="d-flex">
+                                    <div class="col-6">
+                                        <div class="col titl">
+                                            <div class="d-flex">
+                                                <img class="logomod" src="https://picsum.photos/60/60">
+                                                <div class="d-block mt-1 ml-2">
+                                                    <p class="p-title">Ferrari</p>
+                                                    <p class="p-sub">Roma,Italia -4 giu 2019</p>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+
+                                    </div>
+                                </div>
+                                <img class="post-img-b" src="https://picsum.photos/545/400">
+                                <p class="pino p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, architecto eius! Ipsum nesciunt libero soluta, pariatur vero nam laudantium consectetur provident quia, dignissimos odit? Consequuntur soluta pariatur ut ea
+                                    repellat a voluptatibus laboriosam veritatis consectetur! Culpa repellat quibusdam enim aperiam.</p>
+                                <div class="container">
+                                    <div class="soc d-flex">
+                                        <div class="container">
+                                            <div class="container">
+                                                <div class="container d-flex border-t2">
+                                                    <div class="col d-flex w-100">
+                                                        <div style="margin: 0 auto;">
+                                                            <div class="d-flex">
+                                                                <img class="hg heart" src="./img/love.svg" width="30" height="30">
+                                                                <p class="ml-1">321</p>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col d-flex w-100">
+                                                        <div style="margin: 0 auto;">
+                                                            <div class="d-flex">
+                                                                <img class="hg cha" src="./img/chat.svg" width="25" height="25">
+                                                                <p class="ml-1">22</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col d-flex w-100">
+                                                        <div style="margin: 0 auto;">
+                                                            <div class="d-flex">
+                                                                <img class="hg paper" src="./img/condi.png" width="23" height="23">
+                                                                <p class="ml-1">14</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card4e">
+                            <div class="titler12 d-flex">
+                                <div class="col">
+                                    <h1 class="scriv1">Top aziende Italia</h1>
+                                </div>
+                                <div class="col">
+                                    <a href="#" class="scriv2 text-right">Guarda tutto</a>
+                                </div>
+
+                            </div>
+                            <div id="dialog-window">
+                                <div id="scrollable-content">
+
+                                    <div class="d-flex my-3">
+
+                                        <div class="col-2">
+                                            <img class="img-pic" src="https://picsum.photos/51/51" alt="">
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="d-block">
+                                                <p class="clas">sdasdasd</p>
+                                                <p class="clas2">@ferrari</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-2 text-center">
+                                            <a class="apri" href="#">Apri</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex my-3">
+
+                                        <div class="col-2">
+                                            <img class="img-pic" src="https://picsum.photos/50/51" alt="">
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="d-block">
+                                                <p class="clas">sdasdasd</p>
+                                                <p class="clas2">@ferrari</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-2 text-center">
+                                            <a class="apri" href="#">Apri</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex my-3">
+
+                                        <div class="col-2">
+                                            <img class="img-pic" src="https://picsum.photos/52/50" alt="">
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="d-block">
+                                                <p class="clas">sdasdasd</p>
+                                                <p class="clas2">@ferrari</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-2 text-center">
+                                            <a class="apri" href="#">Apri</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex my-3">
+
+                                        <div class="col-2">
+                                            <img class="img-pic" src="https://picsum.photos/50/52" alt="">
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="d-block">
+                                                <p class="clas">sdasdasd</p>
+                                                <p class="clas2">@ferrari</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-2 text-center">
+                                            <a class="apri" href="#">Apri</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex my-3">
+
+                                        <div class="col-2">
+                                            <img class="img-pic" src="https://picsum.photos/49/50" alt="">
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="d-block">
+                                                <p class="clas">sdasdasd</p>
+                                                <p class="clas2">@ferrari</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-2 text-center">
+                                            <a class="apri" href="#">Apri</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex my-3">
+
+                                        <div class="col-2">
+                                            <img class="img-pic" src="https://picsum.photos/49/50" alt="">
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="d-block">
+                                                <p class="clas">sdasdasd</p>
+                                                <p class="clas2">@ferrari</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-2 text-center">
+                                            <a class="apri" href="#">Apri</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="card4e">
+                            <div class="titler12 d-flex">
+                                <div class="col">
+                                    <h1 class="scriv1">Suggeriti per te!</h1>
+                                </div>
+                                <div class="col">
+                                    <a href="#" class="scriv2 text-right">Guarda tutto</a>
+                                </div>
+
+                            </div>
+                            <div id="dialog-window">
+                                <div id="scrollable-content">
+
+                                    <div class="d-flex my-3 pb-2 sponsorized">
+
+                                        <div class="col-2">
+                                            <img class="img-pic-follow" src="https://picsum.photos/51/51" alt="">
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="d-block">
+                                                <p class="clas">Chiara Ferragni</p>
+                                                <p class="clas23">Sponsorizzato da Social Brain</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-2 text-center">
+                                            <a class="segui" href="#">Segui +</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex my-3">
+
+                                        <div class="col-2">
+                                            <img class="img-pic-follow" src="https://picsum.photos/50/51" alt="">
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="d-block">
+                                                <p class="clas">sdasdasd</p>
+                                                <p class="clas2">@ferrari</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-2 text-center">
+                                            <a class="segui" href="#">Segui +</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex my-3">
+
+                                        <div class="col-2">
+                                            <img class="img-pic-follow" src="https://picsum.photos/52/50" alt="">
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="d-block">
+                                                <p class="clas">sdasdasd</p>
+                                                <p class="clas2">@ferrari</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-2 text-center">
+                                            <a class="segui" href="#">Segui +</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex my-3">
+
+                                        <div class="col-2">
+                                            <img class="img-pic-follow" src="https://picsum.photos/50/52" alt="">
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="d-block">
+                                                <p class="clas">sdasdasd</p>
+                                                <p class="clas2">@ferrari</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-2 text-center">
+                                            <a class="segui" href="#">Segui +</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex my-3">
+
+                                        <div class="col-2">
+                                            <img class="img-pic-follow" src="https://picsum.photos/49/50" alt="">
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="d-block">
+                                                <p class="clas">sdasdasd</p>
+                                                <p class="clas2">@ferrari</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-2 text-center">
+                                            <a class="segui" href="#">Segui +</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex my-3">
+
+                                        <div class="col-2">
+                                            <img class="img-pic-follow" src="https://picsum.photos/49/50" alt="">
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="d-block">
+                                                <p class="clas">sdasdasd</p>
+                                                <p class="clas2">@ferrari</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-2 text-center">
+                                            <a class="segui" href="#">Segui+</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex my-3">
+
+                                        <div class="col-2">
+                                            <img class="img-pic-follow" src="https://picsum.photos/49/50" alt="">
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="d-block">
+                                                <p class="clas">sdasdasd</p>
+                                                <p class="clas2">@ferrari</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-2 text-center">
+                                            <a class="segui" href="#">Segui+</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex my-3">
+
+                                        <div class="col-2">
+                                            <img class="img-pic-follow" src="https://picsum.photos/49/50" alt="">
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="d-block">
+                                                <p class="clas">sdasdasd</p>
+                                                <p class="clas2">@ferrari</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-2 text-center">
+                                            <a class="segui" href="#">Segui+</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex my-3">
+
+                                        <div class="col-2">
+                                            <img class="img-pic-follow" src="https://picsum.photos/49/50" alt="">
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="d-block">
+                                                <p class="clas">sdasdasd</p>
+                                                <p class="clas2">@ferrari</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-2 text-center">
+                                            <a class="segui" href="#">Segui+</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex my-3">
+
+                                        <div class="col-2">
+                                            <img class="img-pic-follow" src="https://picsum.photos/49/50" alt="">
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="d-block">
+                                                <p class="clas">sdasdasd</p>
+                                                <p class="clas2">@ferrari</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-2 text-center">
+                                            <a class="segui" href="#">Segui+</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex my-3">
+
+                                        <div class="col-2">
+                                            <img class="img-pic-follow" src="https://picsum.photos/49/50" alt="">
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="d-block">
+                                                <p class="clas">sdasdasd</p>
+                                                <p class="clas2">@ferrari</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-2 text-center">
+                                            <a class="segui" href="#">Segui+</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex my-3">
+
+                                        <div class="col-2">
+                                            <img class="img-pic-follow" src="https://picsum.photos/49/50" alt="">
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="d-block">
+                                                <p class="clas">sdasdasd</p>
+                                                <p class="clas2">@ferrari</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-2 text-center">
+                                            <a class="segui" href="#">Segui+</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex my-3">
+
+                                        <div class="col-2">
+                                            <img class="img-pic-follow" src="https://picsum.photos/49/50" alt="">
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="d-block">
+                                                <p class="clas">sdasdasd</p>
+                                                <p class="clas2">@ferrari</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-2 text-center">
+                                            <a class="segui" href="#">Segui+</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex my-3">
+
+                                        <div class="col-2">
+                                            <img class="img-pic-follow" src="https://picsum.photos/49/50" alt="">
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="d-block">
+                                                <p class="clas">sdasdasd</p>
+                                                <p class="clas2">@ferrari</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-2 text-center">
+                                            <a class="segui" href="#">Segui+</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+
+    <footer class="footer mt-auto py-3 bg-white">
+        <div class="container">
+            <!-- Footer -->
+
+            <!-- Footer Links -->
+            <div class="container-fluid text-center text-md-left">
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 mt-md-0 mt-3">
+
+                        <!-- Content -->
+                        <!-- <img src="./img/genialpages_black.png" width="200">
+                  <p>Here you can use rows and columns to organize your footer content.</p>
+                        -->
+
+                        <!-- Copyright -->
+                    </div>
+                </div>
+                <!-- Grid row -->
+            </div>
+        </div>
+        <!-- Footer Links -->
+
+        <div class="footer-copyright text-center py-1">
+            <a href="https://mdbootstrap.com/education/bootstrap/" class="mr-1 mt-2 text-dark"> privacy</a>|<a href="https://mdbootstrap.com/education/bootstrap/" class="ml-1 mt-2 text-dark">Termini</a>
+        </div>
+        <!-- Copyright -->
+        <div class="footer-copyright1 text-center py-3">© Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/" class="text-dark"> Genial Brain All Rights Reserved
+                2019</a>
+        </div>
+
+
+    </footer>
+
+    <div id="myModal" class="modal2">
+
+        <!-- Modal content -->
+        <div class="modal2-content">
+
+            <div class="modal-headerr d-flex">
+                <div class="col-2">
+                    <img class="left-arrow" src="./img/left-arrow.png" width="10">
+                    <img class="logomod" src="https://picsum.photos/60/60">
+                </div>7
+                <div class="col titl">
+                    <p class="p-title">Ferrari</p>
+                    <p class="p-sub">Roma,Italia -4 giu 2019</p>
+                </div>
+                <div class="col text-right">
+                    <div class="bt-size">
+                        <button class="plus-button2-2 btn-cards">segui</button>
+                        <img class="bottom-arrow" src="./img/left-arrow.png" width="10">
+                    </div>
+                </div>
+            </div>
+            <img class="img-modal" src="https://picsum.photos/301/225">
+            <div class="modal-texter">
+                <p class="p-title2">La Ferrari ha generosamente premiato il suo staff per i <br> successi raggiunti nel 2018</p>
+                <div class="d-flex rrall">
+                    <div class="col-6 d-flex rrfx">
+                        <p class="comm">172</p>&nbsp;
+                        <p class="comm2">Commenti</p>
+                        <img class="ppl" src="https://picsum.photos/61/60">
+                        <img class="ppl" src="https://picsum.photos/62/60">
+                        <img class="ppl" src="https://picsum.photos/63/60">
+                        <img class="ppl" src="https://picsum.photos/64/60">
+                        <img class="ppl" src="https://picsum.photos/65/60">
+                    </div>
+                    <div class="col-6 d-flex rrdx">
+                        <p class="comm">1272</p>&nbsp;
+                        <p class="comm2">Like</p>
+                        <img class="ppl" src="https://picsum.photos/66/60">
+                        <img class="ppl" src="https://picsum.photos/67/60">
+                        <img class="ppl" src="https://picsum.photos/68/60">
+                        <img class="ppl" src="https://picsum.photos/69/60">
+                        <img class="ppl" src="https://picsum.photos/65/61">
+                    </div>
+
+                </div>
+            </div>
+            <div class="socialize d-flex">
+                <div class="col-3 ml-1">
+                    <div class="d-flex">
+                        <img class="ch mr-2" src="./img/love.svg" width="20" height="20">
+                        <p>Mi piace</p>
+                    </div>
+
+                </div>
+                <div class="col-3 marl">
+                    <div class="d-flex">
+                        <img class="ch mr-2" src="./img/chat.svg" width="18" height="18">
+                        <p>Commenta</p>
+                    </div>
+
+                </div>
+                <div class="col-3 marl2">
+                    <div class="d-flex">
+                        <img class="mt-1 mr-2" src="./img/arrow.png" width="20" height="15">
+                        <p>Condividi</p>
+                    </div>
+
+                </div>
+                <div class="col-1">
+                    &nbsp;
+                </div>
+                <div class="col-1">
+                    &nbsp;
+                </div>
+                <div class="col-1">
+                    &nbsp;
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div id="myModal2" class="modal2">
+
+        <!-- Modal content -->
+        <div class="modal22-content">
+
+            <div class="modal-headerr d-flex">
+                <div class="container">
+
+                    <div class="avatar-upload">
+                        <div class="avatar-edit">
+                            <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                            <label for="imageUpload"></label>
+                        </div>
+                        <div class="avatar-preview">
+                            <div id="imagePreview" style="background-image: url(http://i.pravatar.cc/500?img=7);">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center w-100">
+                    <iframe width="820" height="445" autoplay src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- // ===== Scroll to Top ====  -->
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+                    $('#imagePreview').hide();
+                    $('#imagePreview').fadeIn(650);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        $("#imageUpload").change(function() {
+            readURL(this);
+        });
+
+
+        $(function() {
+
+            var offset = 300,
+                duration = 500,
+                top_section = $('.to-top'),
+                toTopButton = $('a.back-to-top');
+            // showing and hiding button according to scroll amount (in pixels)
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > offset) {
+                    $(top_section).fadeIn(duration);
+                } else {
+                    $(top_section).fadeOut(duration);
+
+                }
+            });
+
+            // activate smooth scroll to top when clicking on the button
+
+            $(toTopButton).click(function(e) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 700);
+            });
+
+        });
+    </script>
+
+
+
+
+
+    <script>
+        $(document).ready(function() {
+            if (!$.browser.webkit) {
+                $('.wrapper').html('<p>Sorry! Non webkit users. :(</p>');
+            }
+        });
+    </script>
+
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal2");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn2");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("left-arrow")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function(e) {
+                    $('#blah')
+                        .attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+
+    <script>
+        $(document).bind('dragover', function(e) {
+            var dropZone = $('.zone'),
+                timeout = window.dropZoneTimeout;
+            if (!timeout) {
+                dropZone.addClass('in');
+            } else {
+                clearTimeout(timeout);
+            }
+            var found = false,
+                node = e.target;
+            do {
+                if (node === dropZone[0]) {
+                    found = true;
+                    break;
+                }
+                node = node.parentNode;
+            } while (node != null);
+            if (found) {
+                dropZone.addClass('hover');
+            } else {
+                dropZone.removeClass('hover');
+            }
+            window.dropZoneTimeout = setTimeout(function() {
+                window.dropZoneTimeout = null;
+                dropZone.removeClass('in hover');
+            }, 100);
+        });
+    </script>
+
+
+
+    <!-- Bootstrap core JavaScript
+        ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <!-- <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script> -->
+    <!-- <script src="../../../../assets/js/vendor/popper.min.js"></script>
+        <script src="../../../../dist/js/bootstrap.min.js"></script>
+        <script src="../../../../assets/js/vendor/holder.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/holder.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            if (screen.width <= 699) {
+                console.log("1035");
+                document.location = "mobile.html"
+            }
+        });
+    </script>
+
+
+
+</body>
+
+</html>

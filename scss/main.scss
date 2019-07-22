@@ -1,0 +1,17 @@
+// Custom Variables
+@import "./_variables.scss";
+// Required Bootstrap components
+@import "./../node_modules/bootstrap/scss/functions";
+@import "./../node_modules/bootstrap/scss/variables";
+@import "./../node_modules/bootstrap/scss/mixins";
+// Optional Bootstrap components
+@import "./_bootstrap_components.scss";
+// Custom Styles
+@import "./_custom.scss";
+@import "./buttons.scss";
+@import "./sections.scss";
+@import "./imputs.scss";
+@import "./cards.scss";
+@import "./fonts.scss";
+@import "./mixins.scss";
+@import "./mobile.scss";

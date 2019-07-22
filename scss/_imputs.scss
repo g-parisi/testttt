@@ -1,0 +1,104 @@
+.form-control {
+    margin-top: 225px;
+    position: relative;
+    width: 800px;
+    top: 210px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: #ffffffb8;
+}
+
+.form-control2 {
+    margin-top: 225px;
+    position: relative;
+    width: 800px;
+    top: 200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: #ffffffb8;
+    &:focus {
+        background: white;
+    }
+}
+
+.search2 {
+    border-radius: 30px;
+    width: 370px!important;
+    background: #f7f7f9;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    &:focus {
+        outline: none;
+    }
+}
+
+
+/* Mark input boxes that gets an error on validation: */
+
+input.invalid {
+    background-color: #ffdddd;
+}
+
+
+/* Hide all steps by default: */
+
+.tab {
+    display: none;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#prevBtn {
+    border: 2px solid #186ad9;
+    color: red;
+    font-size: 13px;
+    letter-spacing: .6px;
+    padding: 11px 22px 9px;
+    text-transform: uppercase;
+    background-color: white;
+    border-radius: 30px;
+    &:focus {
+        outline: none;
+    }
+}
+
+
+/* Make circles that indicate the steps of the form: */
+
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+
+/* Mark the steps that are finished and valid: */
+
+.step.finish {
+    background-color: #186ad9;
+}
+
+#nextBtn {
+    border-radius: 30px;
+    &:focus {
+        outline: none;
+    }
+}

@@ -1,0 +1,15 @@
+<svg width="128" height="128" xmlns="http://www.w3.org/2000/svg">
+
+ <title/>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path fill="#90949c" id="svg_1" d="m64,16a47.5,47.5 0 1 1 -47.5,47.5a47.55,47.55 0 0 1 47.5,-47.5m0,-6.5a54,54 0 1 0 54,54a54,54 0 0 0 -54,-54z" class="cls-1"/>
+  <path fill="#90949c" id="svg_2" d="m65.08,16c2.09,0 5.78,3.66 8.93,11.69c3.71,9.46 5.75,22.18 5.75,35.81s-2,26.35 -5.75,35.81c-3.15,8 -6.83,11.69 -8.93,11.69s-5.78,-3.66 -8.93,-11.69c-3.7,-9.46 -5.75,-22.18 -5.75,-35.81s2,-26.35 5.75,-35.81c3.16,-8.04 6.85,-11.69 8.93,-11.69m0,-6.5c-11.7,0 -21.18,24.18 -21.18,54s9.48,54 21.18,54s21.18,-24.18 21.18,-54s-9.48,-54 -21.18,-54z" class="cls-1"/>
+  <line stroke-width="6.5px" stroke-miterlimit="10" stroke="#90949c" fill="none" id="svg_3" y2="80.37" y1="80.37" x2="112.5" x1="17.66" class="cls-2"/>
+  <line stroke-width="6.5px" stroke-miterlimit="10" stroke="#90949c" fill="none" id="svg_4" y2="46.62" y1="46.62" x2="112.5" x1="17.66" class="cls-2"/>
+ </g>
+</svg>

@@ -1,0 +1,1145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../../../favicon.ico"> -->
+
+    <title>Test</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="./node_modules/bootstrap/js/dist/modal.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- Custom styles for this template -->
+    <!-- <link href="pricing.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link href="./css/main.min.css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/45fdb69b13.js"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/slick-1.8.1/slick/slick-theme.css" />
+    <style>
+        .phone-footer {
+            position: fixed;
+            bottom: 20px;
+            width: 50px;
+            height: 50px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+        
+        .phone-header {
+            height: 40px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10000;
+        }
+        
+        .home {
+            background-image: url('./img/icon-profile-scoail.png');
+            background-size: 25px;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-left: 2px;
+            background-color: transparent;
+            border: 0;
+            border-radius: 50%;
+        }
+        
+        .sear {
+            background-image: url('./img/search-icon.png');
+            background-size: 25px;
+            background-position: center;
+            margin-left: 2px;
+            background-repeat: no-repeat;
+            background-color: transparent;
+            border: 0;
+        }
+        
+        .chat {
+            background-image: url('./img/chat.png');
+            background-size: 25px;
+            background-position: center;
+            margin-left: 2px;
+            background-repeat: no-repeat;
+            background-color: transparent;
+            border: 0;
+        }
+        
+        .notific {
+            background-image: url('./img/notification-icon.png');
+            background-size: 24px;
+            margin-left: 4px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: transparent;
+            border: 0;
+        }
+        
+        .menus {
+            background-image: url('./img/hamburger.svg');
+            background-size: 25px;
+            background-position: center;
+            margin-left: 2px;
+            background-repeat: no-repeat;
+            z-index: 11000;
+        }
+        /* .main {
+            height: 2000px;
+        } */
+        
+        .post-ava {
+            border-radius: 50%;
+            height: 45px;
+            width: 45px;
+        }
+        
+        .p-img {
+            width: 350px;
+            height: 262px;
+        }
+        
+        .plus-button {
+            border: 2px solid #fff;
+            background-color: #186ad9a6;
+            font-size: 16px;
+            height: 3.8em;
+            width: 3.8em;
+            border-radius: 999px;
+            position: relative;
+            cursor: pointer;
+            bottom: 21px;
+            outline: 0;
+        }
+        
+        .upl {
+            padding: 10px;
+            width: 3.1em;
+            height: 3.1em;
+            font-size: 17px;
+            font-family: Raleway;
+            opacity: 0;
+            border: 0;
+            border-radius: 10px;
+        }
+        
+        .clicked>svg>path {
+            stroke: black;
+        }
+        
+        #blah {
+            width: 100vw!important;
+            height: 262px!important;
+            position: unset;
+            top: unset;
+        }
+        
+        .card-title {
+            margin-bottom: 0.25rem;
+        }
+        
+        .sidebar-img {
+            border-radius: 50%;
+        }
+        
+        .use {
+            font-size: 16px;
+            text-align: left;
+        }
+        
+        .use2 {
+            font-size: 12px;
+            margin: 0;
+            line-height: 20px;
+        }
+        
+        .reds {
+            width: 27px;
+            height: 19px;
+            position: absolute;
+            background: red;
+            z-index: 12000;
+            right: 28px;
+            top: 32px;
+            border-radius: 30%;
+            color: white;
+            font-size: 12px;
+        }
+        
+        .speech-bubble {
+            position: absolute;
+            background: #ff0226ad;
+            width: 43px;
+            height: 38px;
+            border-radius: .4em;
+            padding-top: 6px;
+            top: 44px;
+            right: 63px;
+            color: white;
+            box-shadow: 1px 1px 6px 0px #00000052;
+        }
+        
+        .speech-bubble:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border: 11px solid transparent;
+            border-bottom-color: #ff0226ad;
+            border-top: 0;
+            margin-left: -11px;
+            margin-top: -11px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="phone-header d-flex phone-yes">
+        <div class="col-4">
+            <img class="mt-2" src="./img/logo_genialbrain.png" width="100" alt="" onclick="location.href='mobile.html';">
+        </div>
+        <div class="col-8 ml-3 d-flex">
+            <div class="col home p-0" onclick="location.href='brand.html';"></div>
+            <div class="col sear p-0" onclick="location.href='search.html';"></div>
+            <div class="col chat p-0" onclick="location.href='#';"></div>
+            <div class="col notific p-0" onclick="location.href='notify.html';"></div>
+
+            <button class="sett toggle" style="margin: 0; background: transparent; border-radius: unset; border: 0; width: unset; height: unset;padding: 0px 15px;" id="menu-toggle2">
+                     <svg class="ham hamRotate180 ham5" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+                    <path
+                          class="line top"
+                          d="m 30,33 h 40 c 0,0 8.5,-0.68551 8.5,10.375 0,8.292653 -6.122707,9.002293 -8.5,6.625 l -11.071429,-11.071429" />
+                    <path
+                          class="line middle"
+                          d="m 70,50 h -40" />
+                    <path
+                          class="line bottom"
+                          d="m 30,67 h 40 c 0,0 8.5,0.68551 8.5,-10.375 0,-8.292653 -6.122707,-9.002293 -8.5,-6.625 l -11.071429,11.071429" />
+                  </svg>
+
+                    <div class="speech-bubble">4</div>
+                </button>
+
+
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <a id="menu-close" href="#" class="btn-default btn-lg pull-right toggle"><i class="glyphicon glyphicon-remove"></i></a>
+                    <a href="brand.html">
+                        <li class="sidebar-brand mt-4 d-flex">
+                            <div class="col-3 p-0 ml-2">
+                                <img class="sidebar-img mb-1" src="./img/icon-profile-scoail.png" alt="">
+                            </div>
+                            <div class="col-9 p-0 mt-2">
+                                <h3 class="card-title use">@Username</h3>
+                                <p class="card-subtitle use2 text-muted">Nome Cognome</p>
+                            </div>
+                        </li>
+                    </a>
+
+                    <li class="mt-4 d-flex">
+
+                        <div class="col-2">
+                            <img class="m-1" src="./img/notification-icon.png" width="20" height="20" alt="">
+                        </div>
+                        <div class="col-10">
+                            <a href="notify.html" style="color: black">Notifiche</a>
+                        </div>
+
+                    </li>
+                    <li class="d-flex">
+
+                        <div class="col-2">
+                            <img class="m-1" src="./img/settings.png" width="25" height="25" alt="">
+                        </div>
+                        <div class="col-10">
+                            <a href="#" style="color: black">Impostazioni</a>
+                        </div>
+                    </li>
+                    <li class="d-flex">
+
+                        <div class="col-2">
+                            <img class="m-1" src="./img/info-icon-social.png" width="23" height="23" alt="">
+                        </div>
+                        <div class="col-10">
+                            <a href="#" style="color: black">Aiuto</a>
+                        </div>
+                    </li>
+                    <li class="d-flex">
+
+                        <div class="col-2">
+                            <img class="m-2" src="./img/headset-icon-social2.png" width="18" height="20" alt="">
+                        </div>
+                        <div class="col-10">
+                            <a href="#" style="color: black">Supporto</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- Fixed navbar -->
+    <nav class="nav1 navbar navbar-expand-md navbar-light fixed-top bg-white">
+
+        <div class="container w-100">
+            <div class="col">
+                <a class="navbar-brand" href="bacheca.html">Genial PaGe</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+            </div>
+            <div class="col nav-col">
+                <img class="avatarrr" onclick="location.href='brand.html';" src="./img/profile.png" width="40" height="40">
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    </header>
+    <main role="main" class="flex-shrink-0 mt-5">
+
+
+        <section class="brand">
+            <div class="col-12">
+                <div class="container">
+                    <div class="row">
+                        <button class="play" type="button" data-toggle="modal" data-target="#exampleModal">
+
+
+
+
+                            <svg id="play" viewBox="0 0 163 163" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"="0px">
+
+                                <g fill="none">
+                                    <g transform="translate(2.000000, 2.000000)" stroke-width="4">
+                                        <path
+                                            d="M10,80 C10,118.107648 40.8923523,149 79,149 L79,149 C117.107648,149 148,118.107648 148,80 C148,41.8923523 117.107648,11 79,11"
+                                            id="lineOne" stroke="#ffffff"></path>
+                                        <path
+                                            d="M105.9,74.4158594 L67.2,44.2158594 C63.5,41.3158594 58,43.9158594 58,48.7158594 L58,109.015859 C58,113.715859 63.4,116.415859 67.2,113.515859 L105.9,83.3158594 C108.8,81.1158594 108.8,76.6158594 105.9,74.4158594 L105.9,74.4158594 Z"
+                                            id="triangle" stroke="#ffffff"></path>
+                                        <path
+                                            d="M159,79.5 C159,35.5933624 123.406638,0 79.5,0 C35.5933624,0 0,35.5933624 0,79.5 C0,123.406638 35.5933624,159 79.5,159 L79.5,159"
+                                            id="lineTwo" stroke="#ffffff"></path>
+                                    </g>
+                                </g>
+                            </svg>
+
+
+
+
+
+
+
+
+                        </button>
+                        <div class="brand-img">
+                            <img class="avatarb" src="https://picsum.photos/100/100">
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+
+
+
+
+        <section class="info-social bg-white w-100">
+
+            <div class="container">
+                <div class="row">
+                    <div class="d-flex-mob">
+                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-6 text-center">
+                            <div class="xe d-flex">
+                                <div class="col phone-no">
+                                    <p class="text-social">Post</p>
+                                    <P class="num">392</P>
+                                </div>
+                                <div class="col p-sm-0">
+                                    <p class="text-social">Like</p>
+                                    <P class="num">3.792</P>
+                                </div>
+                                <div class="col p-sm-0">
+                                    <p class="text-social">Commenti</p>
+                                    <P class="num">1.792</P>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3 text-center">
+                            <div class="spacer-mobile">&nbsp;</div>
+                            <div class="x mt-4 phone-no">
+                                <p class="nickname">Nickname</p>
+                                <P class="realname">Antonio Pistone</P>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-6 text-center">
+                            <div class="xf d-flex">
+                                <div class="col p-sm-0 mr-xl-5 mr-sm-0">
+                                    <p class="text-social">Follower</p>
+                                    <P class="num">2.392</P>
+                                </div>
+                                <div class="col p-sm-0">
+                                    <p class="text-social">Seguiti</p>
+                                    <P class="num">12.392</P>
+                                </div>
+                                <div class="col ml-5 phone-no">
+                                    <button class="plus-button2 btn-cards mt-4">segui</button>
+                                </div>
+                                <div class="x12 ml-3 d-flex none1 phone-no">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn bg-white dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding:0px;">
+                                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                                                fill-rule="evenodd" clip-rule="evenodd">
+                                                <path
+                                                    d="M12 16c1.656 0 3 1.344 3 3s-1.344 3-3 3-3-1.344-3-3 1.344-3 3-3zm0 1c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2zm0-8c1.656 0 3 1.344 3 3s-1.344 3-3 3-3-1.344-3-3 1.344-3 3-3zm0 1c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2zm0-8c1.656 0 3 1.344 3 3s-1.344 3-3 3-3-1.344-3-3 1.344-3 3-3zm0 1c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2z" />
+                                            </svg>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <button class="dropdown-item" type="button">Action</button>
+                                            <button class="dropdown-item" type="button">Another action</button>
+                                            <button class="dropdown-item" type="button">Something else here</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section>
+        <div class="container mt-2 text-center w-100">
+            <section class="info2 d-flex text-center justify-content-center" style="margin: 0 auto;">
+                <div class="mr-4">
+                    <img src="./img/flag.png" width="20" alt="">
+                    <a class="linkedin" href="#">Milano</a>
+                </div>
+                <div class="mr-4">
+                    <img src="./img/phone.png" width="20" alt="">
+                    <a class="linkedin" href="#">095 7357388</a>
+                </div>
+                <div class="mr-4">
+                    <img src="./img/web.svg" width="20" alt="">
+                    <a class="linkedin" href="#">Visita sito</a>
+                </div>
+                <div class="mr-4">
+                    <img src="./img/mail.png" width="20" alt="">
+                    <a class="linkedin" href="#">Invia mail</a>
+                </div>
+                <div class="mr-4">
+                    <img src="./img/Senza titolo-1.png" width="11" alt="">
+                    <a class="linkedin" href="#">Facebook</a>
+                </div>
+                <div class="mr-4">
+                    <img src="./img/iconfinder-icon.svg" width="22" alt="">
+                    <a class="linkedin" href="#">Instagram</a>
+                </div>
+                <div class="mr-4">
+                    <img src="./img/ucciucci.svg" width="20" alt="">
+                    <a class="linkedin" href="#">Twitter</a>
+                </div>
+                <div class="mr-4">
+                    <img class="mb-1" src="./img/inn.svg" width="18" alt="">
+                    <a class="linkedin" href="#">LinkedIn</a>
+                </div>
+                <div class="">
+                    <img src="./img/arrow.png" width="20" alt="">
+                    <a class="linkedin" href="#">Condividi</a>
+                </div>
+            </section>
+        </div>
+        <div class="containe.r">
+            <section class="info-brand mt-4">
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 text-center phone-yes">
+                    <div class="x mt-4 fs22">
+                        <p class="nickname">Nickname</p>
+                        <P class="realname">Antonio Pistone</P>
+                    </div>
+                </div>
+                <div class="text-center d-block">
+                    <div class="col">
+                        con il php limitare il numero di caratteri a 150 o max 2 righe. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, dolorem nostrum. Consectetur animi, ab eligendi itaque iste commodi sit magnam? Consectetur animi, ab eligendi itaque iste
+                        commodi sit magnam?
+                    </div>
+                    <div class="col phone-yes">
+                        <!-- <div class="social-container w-100">
+                            <ul class="social-icons d-flex justify-content-center p-0">
+                                <li>
+                                    <a href="#"><img class="cerchi m-3" src="./img/iconfinder-icon (1).svg" width="40" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img class="cerchi m-3" src="./img/iconfinder-icon (2).svg" width="40" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img class="cerchi m-3" src="./img/iconfinder-icon (3).svg" width="40" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img class="cerchi m-3" src="./img/iconfinder-icon (4).svg" width="40" alt=""></a>
+                                </li>
+                            </ul>
+                        </div> -->
+
+                        <!-- slick carousel  -->
+                        <div class="your-class">
+                            <div>
+                                <div class="dirs mt-2">
+                                    <div class="dirs-in d-flex justify-content-center">
+                                        <a href="#"><img class="cerchi m-2 ce1 d-flex " src="./img/fa.svg" width="30" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="dirs2 mt-2">
+                                    <div class="dirs-in d-flex justify-content-center">
+                                        <a href="#"><img class="cerchi m-2 ce1 d-flex " src="./img/tw.svg" width="30" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="dirs3 mt-2">
+                                    <div class="dirs-in d-flex justify-content-center">
+                                        <a href="#"><img class="cerchi m-2 ce1 d-flex " src="./img/in.svg" width="27" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="dirs4 mt-2">
+                                    <div class="dirs-in d-flex justify-content-center">
+                                        <a href="#"><img class="cerchi m-2 ce1 d-flex " src="./img/ins.svg" width="30" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- / slick carousel  -->
+                    </div>
+
+
+                </div>
+
+            </section>
+        </div>
+
+        <section class="toggler w-100 d-flex mb-2">
+            <div id="btnContainer" class=" d-flex mt-3 " style="margin: 0 auto;">
+                <button class="mx-5 listas p-1 " onclick="listView()">
+                    <img src="./img/duea.png" width="29" height="32" alt=" ">
+                         </button>
+                <button class="mx-5 listas " onclick="gridView() ">
+                       <img src="./img/dueb.svg" width="29" alt=" ">
+                        </button>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="row w-100">
+                <div class="column ">
+                    <div class="card3" onclick="location.href='modal.html';">
+                        <!--   data-toggle="modal" data-target="#exampleModal" -->
+                        <div class="quattroterzi ">&nbsp;</div>
+                        <div class="container ">
+                            <p class="text-brand mt-2 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla eum expedita et eligendi <span style="color: #999999c7 "> ... <a href="# "
+                                            style="color: #999999c7 ">altro</a></span></p>
+                        </div>
+                        <div class="container ">
+                            <div class="lines "></div>
+                            <div class="soc d-flex ">
+                                <div class="container ">
+                                    <div class="container ">
+                                        <div class="container d-flex fffd border-t ">
+                                            <div class="col-2 col-xl-4 col-lg-4 m-xl-l-3 w-100 cdfx">
+                                                <div class="d-flex" style="margin: 0 auto; ">
+                                                    <div class="d-flex ">
+                                                        <img class="heart " src="./img/love.svg " width="30 " height="30 ">
+                                                        <p class="ml-1 ">321</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-2 col-xl-4 col-lg-4 m-xl-l-3 w-100 cdfx">
+                                                <div class="d-flex" style="margin: 0 auto; ">
+                                                    <div class="d-flex ">
+                                                        <img class="cha " src="./img/chat.svg " width="25 " height="25 ">
+                                                        <p class="ml-1 ">22</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-2 col-xl-4 col-lg-4 m-xl-l-3 col-xl-4 col-lg-4 m-xl-l-3 w-100 cdfx">
+                                                <div class="d-flex" style="margin: 0 auto; ">
+                                                    <div class="d-flex ">
+                                                        <img class="paper " src="./img/condi.png " width="22 " height="22 ">
+                                                        <p class="ml-1 ">14</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column ">
+                    <div class="card3 " onclick="location.href='modal.html';">
+                        <div class="quattroterzi ">&nbsp;</div>
+                        <div class="container ">
+                            <p class="text-brand mt-2 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla eum expedita et eligendi <span style="color: #999999c7 "> ... <a href="# "
+                                                style="color: #999999c7 ">altro</a></span></p>
+                        </div>
+                        <div class="container ">
+                            <div class="lines "></div>
+                            <div class="soc d-flex ">
+                                <div class="container ">
+                                    <div class="container ">
+                                        <div class="container d-flex fffd border-t ">
+                                            <div class="col-2 col-xl-4 col-lg-4 m-xl-l-3 w-100 cdfx">
+                                                <div class="d-flex" style="margin: 0 auto; ">
+                                                    <div class="d-flex ">
+                                                        <img class="heart " src="./img/love.svg " width="30 " height="30 ">
+                                                        <p class="ml-1 ">321</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-2 col-xl-4 col-lg-4 m-xl-l-3 w-100 cdfx">
+                                                <div class="d-flex" style="margin: 0 auto; ">
+                                                    <div class="d-flex ">
+                                                        <img class="cha " src="./img/chat.svg " width="25 " height="25 ">
+                                                        <p class="ml-1 ">22</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-2 col-xl-4 col-lg-4 m-xl-l-3 w-100 cdfx">
+                                                <div class="d-flex" style="margin: 0 auto; ">
+                                                    <div class="d-flex ">
+                                                        <img class="paper " src="./img/condi.png " width="22 " height="22 ">
+                                                        <p class="ml-1 ">14</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column ">
+                    <div class="card3 " onclick="location.href='modal.html';">
+                        <div class="quattroterzi ">&nbsp;</div>
+                        <div class="container ">
+                            <p class="text-brand mt-2 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla eum expedita et eligendi <span style="color: #999999c7 "> ... <a href="# "
+                                                    style="color: #999999c7 ">altro</a></span></p>
+                        </div>
+                        <div class="container ">
+                            <div class="lines "></div>
+                            <div class="soc d-flex ">
+                                <div class="container ">
+                                    <div class="container ">
+                                        <div class="container d-flex fffd border-t ">
+                                            <div class="col-2 col-xl-4 col-lg-4 m-xl-l-3 w-100 cdfx">
+                                                <div class="d-flex" style="margin: 0 auto; ">
+                                                    <div class="d-flex ">
+                                                        <img class="heart " src="./img/love.svg " width="30 " height="30 ">
+                                                        <p class="ml-1 ">321</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-2 col-xl-4 col-lg-4 m-xl-l-3 w-100 cdfx">
+                                                <div class="d-flex" style="margin: 0 auto; ">
+                                                    <div class="d-flex ">
+                                                        <img class="cha " src="./img/chat.svg " width="25 " height="25 ">
+                                                        <p class="ml-1 ">22</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-2 col-xl-4 col-lg-4 m-xl-l-3 w-100 cdfx">
+                                                <div class="d-flex" style="margin: 0 auto; ">
+                                                    <div class="d-flex ">
+                                                        <img class="paper " src="./img/condi.png " width="22 " height="22 ">
+                                                        <p class="ml-1 ">14</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pb-3 ">
+                <div class="column ">
+                    <div class="card3 " onclick="location.href='modal.html';">
+                        <div class="quattroterzi ">&nbsp;</div>
+                        <div class="container ">
+                            <p class="text-brand mt-2 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla eum expedita et eligendi <span style="color: #999999c7 "> ... <a href="# "
+                                                    style="color: #999999c7 ">altro</a></span></p>
+                        </div>
+                        <div class="container ">
+                            <div class="lines "></div>
+                            <div class="soc d-flex ">
+                                <div class="container ">
+                                    <div class="container ">
+                                        <div class="container d-flex fffd border-t ">
+                                            <div class="col-2 col-xl-4 col-lg-4 m-xl-l-3 w-100 cdfx">
+                                                <div class="d-flex" style="margin: 0 auto; ">
+                                                    <div class="d-flex ">
+                                                        <img class="heart " src="./img/love.svg " width="30 " height="30 ">
+                                                        <p class="ml-1 ">321</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-2 col-xl-4 col-lg-4 m-xl-l-3 w-100 cdfx">
+                                                <div class="d-flex" style="margin: 0 auto; ">
+                                                    <div class="d-flex ">
+                                                        <img class="cha " src="./img/chat.svg " width="25 " height="25 ">
+                                                        <p class="ml-1 ">22</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-2 col-xl-4 col-lg-4 m-xl-l-3 w-100 cdfx">
+                                                <div class="d-flex" style="margin: 0 auto; ">
+                                                    <div class="d-flex ">
+                                                        <img class="paper " src="./img/condi.png " width="22 " height="22 ">
+                                                        <p class="ml-1 ">14</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column ">
+                    <div class="card3 " onclick="location.href='modal.html';">
+                        <div class="quattroterzi ">&nbsp;</div>
+                        <div class="container ">
+                            <p class="text-brand mt-2 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla eum expedita et eligendi <span style="color: #999999c7 "> ... <a href="# "
+                                                        style="color: #999999c7 ">altro</a></span></p>
+                        </div>
+                        <div class="container ">
+                            <div class="lines "></div>
+                            <div class="soc d-flex ">
+                                <div class="container ">
+                                    <div class="container ">
+                                        <div class="container d-flex fffd border-t ">
+                                            <div class="col-2 col-xl-4 col-lg-4 m-xl-l-3 w-100 cdfx">
+                                                <div class="d-flex" style="margin: 0 auto; ">
+                                                    <div class="d-flex ">
+                                                        <img class="heart " src="./img/love.svg " width="30 " height="30 ">
+                                                        <p class="ml-1 ">321</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-2 col-xl-4 col-lg-4 m-xl-l-3 w-100 cdfx">
+                                                <div class="d-flex" style="margin: 0 auto; ">
+                                                    <div class="d-flex ">
+                                                        <img class="cha " src="./img/chat.svg " width="25 " height="25 ">
+                                                        <p class="ml-1 ">22</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-2 col-xl-4 col-lg-4 m-xl-l-3 col-xl-4 col-lg-4 m-xl-l-3 w-100 cdfx">
+                                                <div class="d-flex" style="margin: 0 auto; ">
+                                                    <div class="d-flex ">
+                                                        <img class="paper " src="./img/condi.png " width="22 " height="22 ">
+                                                        <p class="ml-1 ">14</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column ">
+                    <div class="card3 " onclick="location.href='modal.html';">
+                        <div class="quattroterzi ">&nbsp;</div>
+                        <div class="container ">
+                            <p class="text-brand mt-2 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla eum expedita et eligendi <span style="color: #999999c7 "> ... <a href="# "
+                                                            style="color: #999999c7 ">altro</a></span></p>
+                        </div>
+                        <div class="container ">
+                            <div class="lines "></div>
+                            <div class="soc d-flex ">
+                                <div class="container ">
+                                    <div class="container ">
+                                        <div class="container d-flex fffd border-t ">
+                                            <div class="col-2 col-xl-4 col-lg-4 m-xl-l-3 w-100 cdfx">
+                                                <div class="d-flex" style="margin: 0 auto; ">
+                                                    <div class="d-flex ">
+                                                        <img class="heart " src="./img/love.svg " width="30 " height="30 ">
+                                                        <p class="ml-1 ">321</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-2 col-xl-4 col-lg-4 m-xl-l-3 w-100 cdfx">
+                                                <div class="d-flex" style="margin: 0 auto; ">
+                                                    <div class="d-flex ">
+                                                        <img class="cha " src="./img/chat.svg " width="25 " height="25 ">
+                                                        <p class="ml-1 ">22</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-2 col-xl-4 col-lg-4 m-xl-l-3 w-100 cdfx">
+                                                <div class="d-flex" style="margin: 0 auto; ">
+                                                    <div class="d-flex ">
+                                                        <img class="paper " src="./img/condi.png " width="22 " height="22 ">
+                                                        <p class="ml-1 ">14</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            // Get the elements with class="column "
+            var elements = document.getElementsByClassName("column");
+            var element2 = document.getElementsByClassName("card3");
+            var element3 = document.getElementsByClassName("quattroterzi");
+            var element4 = document.getElementsByClassName("text-brand");
+            var element5 = document.getElementsByClassName("lines");
+            var element6 = document.getElementsByClassName("cdfx");
+
+            // Declare a loop variable
+            var i;
+
+            // List View
+            function listView() {
+                for (i = 0; i < elements.length; i++) {
+                    elements[i].style.width = "100%";
+                    elements[i].style.height = "380px";
+                    element2[i].style.height = "357px";
+                    element3[i].style.height = "68%";
+                    element3[i].style.borderRadius = "0";
+                    element4[i].style.fontSize = "15px";
+                    element4[i].style.height = "68px";
+                    element4[i].style.top = "9px";
+                    element5[i].style.display = "flex !important";
+                    element6[i].style.display = "block";
+                    element6[i].style.top = "-16px";
+                    element6[i].style.margin = "0px 25px";
+                }
+            }
+
+            // Grid View
+            function gridView() {
+                for (i = 0; i < elements.length; i++) {
+                    elements[i].style.width = "33%";
+                    elements[i].style.height = "163px";
+                    element2[i].style.height = "160px";
+                    element3[i].style.height = "115px";
+                    element4[i].style.fontSize = "12px";
+                    element4[i].style.height = "32px";
+                    element4[i].style.top = "-10px";
+                    element6[i].style.display = "none";
+                }
+            }
+
+            /* Optional: Add active class to the current button (highlight it) */
+            var container = document.getElementById("btnContainer ");
+            var btns = container.getElementsByClassName("listas");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click ", function() {
+                    var current = document.getElementsByClassName("active ");
+                    current[0].className = current[0].className.replace(" active ", " ");
+                    this.className += " active ";
+                });
+            }
+        </script>
+
+
+        <section class="cards ccc3 mt-5 ">
+
+        </section>
+
+    </main>
+
+
+
+
+    <footer class="footer mt-auto py-3 bg-white ">
+        <div class="container ">
+            <!-- Footer -->
+
+            <!-- Footer Links -->
+            <div class="container-fluid text-center text-md-left ">
+
+                <!-- Grid row -->
+                <div class="row ">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 mt-md-0 mt-3 ">
+
+                        <!-- Content -->
+                        <!-- <img src="./img/genialpages_black.png " width="200 ">
+                  <p>Here you can use rows and columns to organize your footer content.</p>
+                        -->
+
+                        <!-- Copyright -->
+                    </div>
+                </div>
+                <!-- Grid row -->
+            </div>
+        </div>
+        <!-- Footer Links -->
+
+        <div class="footer-copyright text-center py-1 ">
+            <a href="https://mdbootstrap.com/education/bootstrap/ " class="mr-1 mt-2 text-dark "> privacy</a>|<a href="https://mdbootstrap.com/education/bootstrap/ " class="ml-1 mt-2 text-dark ">Termini</a>
+        </div>
+        <!-- Copyright -->
+        <div class="footer-copyright1 text-center py-3 ">© Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/ " class="text-dark "> Genial Brain All Rights Reserved
+                2019</a>
+        </div>
+
+
+    </footer>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!-- Modal content -->
+        <div class="modal2-content ">
+
+            <div class="modal-headerr d-flex ">
+                <div class="col-2 ">
+                    <img class="left-arrow " data-dismiss="modal" src="./img/left-arrow.png " width="10 ">
+                    <img class="logomod " src="https://picsum.photos/60/60 ">
+                </div>
+                <div class="col titl ">
+                    <p class="p-title ">Ferrari</p>
+                    <p class="p-sub ">Roma,Italia -4 giu 2019</p>
+                </div>
+                <div class="col text-right ">
+                    <div class="bt-size ">
+                        <button class="plus-button2-2 btn-cards ">segui</button>
+                        <img class="bottom-arrow " src="./img/left-arrow.png " width="10 ">
+                    </div>
+                </div>
+            </div>
+            <img class="img-modal " src="https://picsum.photos/301/225 ">
+            <div class="modal-texter ">
+                <p class="p-title2 ">La Ferrari ha generosamente premiato il suo staff per i <br> successi raggiunti nel 2018</p>
+                <div class="d-flex rrall ">
+                    <div class="col-6 d-flex rrfx ">
+                        <p class="comm ">172</p>&nbsp;
+                        <p class="comm2 ">Interazioni</p>
+                        <img class="ppl " src="https://picsum.photos/61/60 ">
+                        <img class="ppl " src="https://picsum.photos/62/60 ">
+                        <img class="ppl " src="https://picsum.photos/63/60 ">
+                        <img class="ppl " src="https://picsum.photos/64/60 ">
+                        <img class="ppl " src="https://picsum.photos/65/60 ">
+                    </div>
+                    <div class="col-6 d-flex rrdx ">
+                        <p class="comm ">1272</p>&nbsp;
+                        <p class="comm2 ">Like</p>
+                        <img class="ppl " src="https://picsum.photos/66/60 ">
+                        <img class="ppl " src="https://picsum.photos/67/60 ">
+                        <img class="ppl " src="https://picsum.photos/68/60 ">
+                        <img class="ppl " src="https://picsum.photos/69/60 ">
+                        <img class="ppl " src="https://picsum.photos/65/61 ">
+                    </div>
+
+                </div>
+            </div>
+            <div class="socialize d-flex ">
+                <div class="col-sm-4 col-md-3 col-lg-3 col-xl-3 ml-1 ">
+                    <div class="d-flex ">
+                        <img class="ch mr-2 " src="./img/love.svg " width="20 " height="20 ">
+                        <p>Mi piace</p>
+                    </div>
+
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-3 col-xl-3 marl ">
+                    <div class="d-flex ">
+                        <img class="ch mr-2 " src="./img/chat.svg " width="18 " height="18 ">
+                        <p>Commenta</p>
+                    </div>
+
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-3 col-xl-3 marl2 ">
+                    <div class="d-flex ">
+                        <img class="mt-1 mr-2 " src="./img/arrow.png " width="20 " height="15 ">
+                        <p>Condividi</p>
+                    </div>
+
+                </div>
+                <div class="col-1 phone-no">
+                    &nbsp;
+                </div>
+                <div class="col-1 phone-no">
+                    &nbsp;
+                </div>
+                <div class="col-1 phone-no">
+                    &nbsp;
+                </div>
+            </div>
+            <div class="modal-testo ">
+                <div class="commento1 d-flex ">
+                    <div class="col-2">
+                        <img class="avatar-commento " src="https://picsum.photos/61/60 ">
+                    </div>
+                    <div class="col-10">
+                        <p class="vignetta">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio architecto est porro modi sit amet incidunt aperiam dicta ipsum inventore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, consectetur.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="risposta d-flex ">
+                    <div class="col-10">
+                        <p class="risposta1 ">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet vel repellat eos itaque modi neque ad, iusto veritatis harum delectus?
+                        </p>
+                    </div>
+                    <div class="col-2">
+                        <img class="avatar-commento " src="https://picsum.photos/62/61 ">
+                    </div>
+
+                </div>
+            </div>
+            <div class="d-flex ">
+                <input type="text " placeholder="Messaggio "><button type="button " class="pubblica22 ">Pubblica</button>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade " id="exampleModal " tabindex="-1 " role="dialog " aria-labelledby="exampleModalLabel " aria-hidden="true ">
+        <div class="modal-dialog " role="document ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+                        <span aria-hidden="true ">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center w-100 ">
+                    <iframe width="820 " height="445 " autoplay src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1 ">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js " integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin=" anonymous "></script> -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js "></script>
+    <script type="text/javascript" src="./assets/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+
+
+    <script>
+        $('.your-class').slick({
+            dots: false,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 4,
+            centerMode: true,
+            variableWidth: false
+        });
+
+
+        function disableNotify() {
+
+        }
+        $(".sett").click(function() {
+            $(".speech-bubble").css("display", "none");
+        });
+
+
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function(e) {
+                    $('#blah').attr('src', e.target.result);
+                }
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        $("#imgInp").change(function() {
+            readURL(this);
+        });
+
+
+
+
+        $(document).ready(function() {
+            function reorient(e) {
+                var portrait = (window.orientation % 180 == 0);
+                $("body > div").css("-webkit-transform", !portrait ? "rotate(-90deg)" : "");
+            }
+            window.onorientationchange = reorient;
+            window.setTimeout(reorient, 0);
+        });
+
+
+
+
+        $('.sett').click(function() {
+            $(this).toggleClass('clicked');
+        });
+
+
+        $("#menu-close ").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper ").toggleClass("active ");
+        });
+        $("#menu-toggle2 ").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper ").toggleClass("active ");
+        });
+    </script>
+
+
+</body>
+
+</html>

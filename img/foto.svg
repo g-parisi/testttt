@@ -1,0 +1,26 @@
+<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path stroke="#186ad9" fill="#186ad9" id="Fill-12" d="m51.8,50.4l-39.5,0c-2.3,0 -4.2,-1.9 -4.2,-4.2l0,-28.2c0,-2.3 1.9,-4.2 4.2,-4.2l39.5,0c2.3,0 4.2,1.9 4.2,4.2l0,28.2c0,2.3 -1.9,4.2 -4.2,4.2l0,0zm-39.6,-33.9c-0.8,0 -1.4,0.6 -1.4,1.4l0,28.2c0,0.8 0.6,1.4 1.4,1.4l39.5,0c0.8,0 1.4,-0.6 1.4,-1.4l0,-28.2c0,-0.8 -0.6,-1.4 -1.4,-1.4l-39.5,0l0,0z" class="st0"/>
+  <path stroke="#186ad9" fill="#186ad9" id="Fill-13" d="m39.1,30.5c-3.1,0 -5.5,-2.5 -5.5,-5.5s2.5,-5.5 5.5,-5.5s5.5,2.5 5.5,5.5s-2.5,5.5 -5.5,5.5l0,0zm0,-8.5c-1.6,0 -2.9,1.3 -2.9,2.9c0,1.6 1.3,2.9 2.9,2.9c1.6,0 2.9,-1.3 2.9,-2.9c0,-1.6 -1.3,-2.9 -2.9,-2.9l0,0z" class="st0"/>
+  <polyline stroke="#186ad9" fill="#134563" points="46.600006103515625,49.899993896484375 23.5,28.199996948242188 10.29998779296875,40.399993896484375 8.5,38.5 23.5,24.600006103515625 48.399993896484375,48 46.600006103515625,49.899993896484375 " id="Fill-14" class="st0"/>
+  <polyline stroke="#186ad9" fill="#134563" points="54.01476812362671,42.48523187637329 46.31477117538452,36.2852349281311 39.914762020111084,41.585237979888916 38.2147650718689,39.48523187637329 46.31477117538452,32.88524103164673 55.61475896835327,40.48523187637329 54.01476812362671,42.48523187637329 " id="Fill-15" class="st0"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_3" y2="25.602348" x2="24.214764" y1="39.991608" x1="8.107383" stroke-width="1.5" stroke="#186ad9" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_4" y2="35.266777" x2="15.302013" y1="35.911072" x1="13.583893" stroke-width="1.5" stroke="#186ad9" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_5" y2="26.031878" x2="25.825502" y1="40.421138" x1="9.718121" stroke-width="1.5" stroke="#186ad9" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_6" y2="47.615769" x2="48.053688" y1="24.635905" x1="23.248321" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#186ad9" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_8" y2="49.548654" x2="48.053688" y1="26.568791" x1="23.248321" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#186ad9" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_9" y2="47.615769" x2="48.053688" y1="24.635905" x1="23.248321" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#186ad9" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_10" y2="39.669461" x2="39.67785" y1="33.870804" x1="46.44295" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#186ad9" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_11" y2="37.95134" x2="43.543621" y1="38.38087" x1="42.255031" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#186ad9" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_12" y2="39.884226" x2="40.322145" y1="34.085569" x1="47.087245" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#186ad9" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_13" y2="41.494964" x2="55.463083" y1="33.763421" x1="46.120802" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#186ad9" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_14" y2="37.09228" x2="49.986574" y1="36.555367" x1="48.590601" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#186ad9" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_15" y2="42.783554" x2="55.248318" y1="35.052011" x1="45.906037" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#186ad9" fill="none"/>
+ </g>
+</svg>

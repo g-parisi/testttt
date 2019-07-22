@@ -1,0 +1,708 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../../../favicon.ico"> -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="./node_modules/bootstrap/js/dist/modal.js"></script>
+
+    <title>Test</title>
+
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- Custom styles for this template -->
+    <!-- <link href="pricing.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link href="./css/main.min.css" rel="stylesheet">
+    <link href="./font-awesome/css/all.min.css" rel="stylesheet">
+    <style>
+        .phone-footer {
+            position: fixed;
+            bottom: 20px;
+            width: 50px;
+            height: 50px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+        
+        .phone-header {
+            height: 40px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10000;
+        }
+        
+        .home {
+            background-image: url('./img/icon-profile-scoail.png');
+            background-size: 25px;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-left: 2px;
+            background-color: transparent;
+            border: 0;
+            border-radius: 50%;
+        }
+        
+        .sear {
+            background-image: url('./img/search-icon.png');
+            background-size: 25px;
+            background-position: center;
+            margin-left: 2px;
+            background-repeat: no-repeat;
+            background-color: transparent;
+            border: 0;
+        }
+        
+        .chat {
+            background-image: url('./img/chat.png');
+            background-size: 25px;
+            background-position: center;
+            margin-left: 2px;
+            background-repeat: no-repeat;
+            background-color: transparent;
+            border: 0;
+        }
+        
+        .notific {
+            background-image: url('./img/notification-icon.png');
+            background-size: 24px;
+            margin-left: 4px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: transparent;
+            border: 0;
+        }
+        
+        .menus {
+            background-image: url('./img/hamburger.svg');
+            background-size: 25px;
+            background-position: center;
+            margin-left: 2px;
+            background-repeat: no-repeat;
+            z-index: 11000;
+        }
+        /* .main {
+            height: 2000px;
+        } */
+        
+        .post-ava {
+            border-radius: 50%;
+            height: 45px;
+            width: 45px;
+        }
+        
+        .p-img {
+            width: 350px;
+            height: 262px;
+        }
+        
+        .plus-button {
+            border: 2px solid #fff;
+            background-color: #186ad9a6;
+            font-size: 16px;
+            height: 3.8em;
+            width: 3.8em;
+            border-radius: 999px;
+            position: relative;
+            cursor: pointer;
+            bottom: 21px;
+            outline: 0;
+        }
+        
+        .upl {
+            padding: 10px;
+            width: 3.1em;
+            height: 3.1em;
+            font-size: 17px;
+            font-family: Raleway;
+            opacity: 0;
+            border: 0;
+            border-radius: 10px;
+        }
+        
+        .clicked>svg>path {
+            stroke: black;
+        }
+        
+        #blah {
+            width: 100vw!important;
+            height: 262px!important;
+            position: unset;
+            top: unset;
+        }
+        
+        .card-title {
+            margin-bottom: 0.25rem;
+        }
+        
+        .sidebar-img {
+            border-radius: 50%;
+        }
+        
+        .use {
+            font-size: 16px;
+            text-align: left;
+        }
+        
+        .use2 {
+            font-size: 12px;
+            margin: 0;
+            line-height: 20px;
+        }
+        
+        .reds {
+            width: 27px;
+            height: 19px;
+            position: absolute;
+            background: red;
+            z-index: 12000;
+            right: 28px;
+            top: 32px;
+            border-radius: 30%;
+            color: white;
+            font-size: 12px;
+        }
+        
+        .speech-bubble {
+            position: absolute;
+            background: #ff0226ad;
+            width: 43px;
+            height: 38px;
+            border-radius: .4em;
+            padding-top: 6px;
+            top: 44px;
+            right: 63px;
+            color: white;
+            box-shadow: 1px 1px 6px 0px #00000052;
+        }
+        
+        .speech-bubble:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border: 11px solid transparent;
+            border-bottom-color: #ff0226ad;
+            border-top: 0;
+            margin-left: -11px;
+            margin-top: -11px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="phone-header d-flex phone-yes">
+        <div class="col-4">
+            <img class="mt-2" src="./img/logo_genialbrain.png" width="100" alt="" onclick="location.href='mobile.html';">
+        </div>
+        <div class="col-8 ml-3 d-flex">
+            <div class="col home p-0" onclick="location.href='brand.html';"></div>
+            <div class="col sear p-0" onclick="location.href='search.html';"></div>
+            <div class="col chat p-0" onclick="location.href='#';"></div>
+            <div class="col notific p-0" onclick="location.href='notify.html';"></div>
+
+            <button class="sett toggle" style="margin: 0; background: transparent; border-radius: unset; border: 0; width: unset; height: unset;padding: 0px 15px;" id="menu-toggle2">
+                     <svg class="ham hamRotate180 ham5" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+                    <path
+                          class="line top"
+                          d="m 30,33 h 40 c 0,0 8.5,-0.68551 8.5,10.375 0,8.292653 -6.122707,9.002293 -8.5,6.625 l -11.071429,-11.071429" />
+                    <path
+                          class="line middle"
+                          d="m 70,50 h -40" />
+                    <path
+                          class="line bottom"
+                          d="m 30,67 h 40 c 0,0 8.5,0.68551 8.5,-10.375 0,-8.292653 -6.122707,-9.002293 -8.5,-6.625 l -11.071429,11.071429" />
+                  </svg>
+
+                    <div class="speech-bubble">4</div>
+                </button>
+
+
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <a id="menu-close" href="#" class="btn-default btn-lg pull-right toggle"><i class="glyphicon glyphicon-remove"></i></a>
+                    <a href="brand.html">
+                        <li class="sidebar-brand mt-4 d-flex">
+                            <div class="col-3 p-0 ml-2">
+                                <img class="sidebar-img mb-1" src="./img/icon-profile-scoail.png" alt="">
+                            </div>
+                            <div class="col-9 p-0 mt-2">
+                                <h3 class="card-title use">@Username</h3>
+                                <p class="card-subtitle use2 text-muted">Nome Cognome</p>
+                            </div>
+                        </li>
+                    </a>
+
+                    <li class="mt-4 d-flex">
+
+                        <div class="col-2">
+                            <img class="m-1" src="./img/notification-icon.png" width="20" height="20" alt="">
+                        </div>
+                        <div class="col-10">
+                            <a class="text-dark" href="notify.html" style="color: black">Notifiche</a>
+                        </div>
+
+                    </li>
+                    <li class="d-flex">
+
+                        <div class="col-2">
+                            <img class="m-1" src="./img/settings.png" width="25" height="25" alt="">
+                        </div>
+                        <div class="col-10">
+                            <a class="text-dark" href="#" style="color: black">Impostazioni</a>
+                        </div>
+                    </li>
+                    <li class="d-flex">
+
+                        <div class="col-2">
+                            <img class="m-1" src="./img/info-icon-social.png" width="23" height="23" alt="">
+                        </div>
+                        <div class="col-10">
+                            <a class="text-dark" href="#" style="color: black">Aiuto</a>
+                        </div>
+                    </li>
+                    <li class="d-flex">
+
+                        <div class="col-2">
+                            <img class="m-2" src="./img/headset-icon-social2.png" width="18" height="20" alt="">
+                        </div>
+                        <div class="col-10">
+                            <a class="text-dark" href="#" style="color: black">Supporto</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- Fixed navbar -->
+    <nav class="nav1 navbar navbar-expand-md navbar-light fixed-top bg-white">
+
+        <div class="container w-100">
+            <div class="col">
+                <a class="navbar-brand" href="bacheca.html">Genial PaGe</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+
+            </div>
+            <div class="col nav-col">
+                <img class="avatarrr" onclick="location.href='brand.html';" src="./img/profile.png" width="40" height="40">
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    </header>
+
+    <main role="main" class="flex-shrink-0 tony">
+
+        <section class="search">
+            <div class="col-12">
+                <div class="container">
+                    <div class="row">
+                        <!-- Search form -->
+                        <input class="form-control2" type="text" placeholder="Search" aria-label="Search">
+                        <div class="searchbar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="cards mt-4">
+            <div class="container container-fluid no-padding">
+                <div class="row">
+                    <div <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 no-gutters">
+                        <div class="card w-100">
+                            <img class="cover" src="./img/ferrari-cover.png">
+                            <img class="placeholder" src="./img/ferrari-logo.png">
+
+                            <div class="d-block text-center ghf">
+                                <div class="categories text-center mb-0">
+                                    <p class="category">Category</p>
+                                </div>
+
+                                <div class="d-flex credentials text-center">
+                                    <div class="center">
+                                        <p class="brand-name">Scuderia Ferrari</p>
+                                    </div>
+
+                                </div>
+
+
+                                <p class="text mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla eum expedita et eligendi quibusdam laborum rem. Vel laboriosam debitis ducimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, voluptatum?</p>
+
+                                <button type="button" class="btn bbq btn-blu btn-cards" onclick="location.href='brand.html';">scopri di più</button>
+                                <div class="d-flex brodo">
+                                    <div class="a3 text-left ml-4 mt-4">
+                                        <img class="avatar1" src="https://picsum.photos/80/81">
+                                        <img class="avatar2" src="https://picsum.photos/81/80">
+                                        <img class="avatar3" src="https://picsum.photos/80/82">
+                                    </div>
+                                    <p class="piace">Piace a Marco, Giulia, Francesco e altri 4.397.080</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <div class="card w-100">
+                            <img class="cover" src="https://picsum.photos/800/301">
+                            <img class="placeholder" src="https://picsum.photos/90/91">
+
+
+
+                            <!-- <div class="btn-group">
+                                <button type="button" style="outline: none" class="btn btn-card dropdown-toggle" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <p class="btndot">...</p>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <button class="dropdown-item" type="button">Test</button>
+                                    <button class="dropdown-item" type="button">Test</button>
+                                    <button class="dropdown-item" type="button">Test</button>
+                                </div>
+                            </div> -->
+
+                            <div class="d-block text-center ghf">
+                                <div class="categories text-center mb-0">
+                                    <p class="category">Category</p>
+                                </div>
+
+                                <div class="d-flex credentials text-center">
+                                    <div class="center">
+                                        <p class="brand-name">Scuderia Ferrari</p>
+                                    </div>
+
+                                </div>
+
+
+                                <p class="text mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla eum expedita et eligendi quibusdam laborum rem. Vel laboriosam debitis ducimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, voluptatum?</p>
+
+                                <button type="button" class="btn bbq btn-blu btn-cards" onclick="location.href='brand.html';">scopri di più</button>
+                                <div class="d-flex brodo">
+                                    <div class="a3 text-left ml-4 mt-4">
+                                        <img class="avatar1" src="https://picsum.photos/80/81">
+                                        <img class="avatar2" src="https://picsum.photos/81/80">
+                                        <img class="avatar3" src="https://picsum.photos/80/82">
+                                    </div>
+                                    <p class="piace">Piace a Marco, Giulia, Francesco e altri 4.397.080</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <div class="card w-100">
+                            <img class="cover" src="https://picsum.photos/802/300">
+                            <img class="placeholder" src="https://picsum.photos/91/90">
+
+
+                            <!-- <div class="btn-group">
+                                <button type="button" class="btn btn-card dropdown-toggle" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <p class="btndot">...</p>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <button class="dropdown-item" type="button">Test</button>
+                                    <button class="dropdown-item" type="button">Test</button>
+                                    <button class="dropdown-item" type="button">Test</button>
+                                </div>
+                            </div> -->
+
+                            <div class="d-block text-center ghf">
+                                <div class="categories text-center mb-0">
+                                    <p class="category">Category</p>
+                                </div>
+
+                                <div class="d-flex credentials text-center">
+                                    <div class="center">
+                                        <p class="brand-name">Scuderia Ferrari</p>
+                                    </div>
+
+                                </div>
+
+
+                                <p class="text mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla eum expedita et eligendi quibusdam laborum rem. Vel laboriosam debitis ducimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, voluptatum?</p>
+
+                                <button type="button" class="btn bbq btn-blu btn-cards" onclick="location.href='brand.html';">scopri di più</button>
+                                <div class="d-flex brodo">
+                                    <div class="a3 text-left ml-4 mt-4">
+                                        <img class="avatar1" src="https://picsum.photos/80/81">
+                                        <img class="avatar2" src="https://picsum.photos/81/80">
+                                        <img class="avatar3" src="https://picsum.photos/80/82">
+                                    </div>
+                                    <p class="piace">Piace a Marco, Giulia, Francesco e altri 4.397.080</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <div class="card w-100">
+                            <img class="cover" src="https://picsum.photos/800/302">
+                            <img class="placeholder" src="https://picsum.photos/92/90">
+
+
+
+
+                            <div class="d-block text-center ghf">
+                                <div class="categories text-center mb-0">
+                                    <p class="category">Category</p>
+                                </div>
+
+                                <div class="d-flex credentials text-center">
+                                    <div class="center">
+                                        <p class="brand-name">Scuderia Ferrari</p>
+                                    </div>
+
+                                </div>
+
+
+                                <p class="text mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla eum expedita et eligendi quibusdam laborum rem. Vel laboriosam debitis ducimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, voluptatum?</p>
+
+                                <button type="button" class="btn bbq btn-blu btn-cards" onclick="location.href='brand.html';">scopri di più</button>
+                                <div class="d-flex brodo">
+                                    <div class="a3 text-left ml-4 mt-4">
+                                        <img class="avatar1" src="https://picsum.photos/80/81">
+                                        <img class="avatar2" src="https://picsum.photos/81/80">
+                                        <img class="avatar3" src="https://picsum.photos/80/82">
+                                    </div>
+                                    <p class="piace">Piace a Marco, Giulia, Francesco e altri 4.397.080</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!-- Modal content -->
+        <div class="modal2-content ">
+
+            <div class="modal-headerr d-flex ">
+                <div class="col-2 ">
+                    <img class="left-arrow " data-dismiss="modal" src="./img/left-arrow.png " width="10 ">
+                    <img class="logomod " src="https://picsum.photos/60/60 ">
+                </div>
+                <div class="col titl ">
+                    <p class="p-title ">Ferrari</p>
+                    <p class="p-sub ">Roma,Italia -4 giu 2019</p>
+                </div>
+                <div class="col text-right ">
+                    <div class="bt-size ">
+                        <button class="plus-button2-2 btn-cards ">segui</button>
+                        <img class="bottom-arrow " src="./img/left-arrow.png " width="10 ">
+                    </div>
+                </div>
+            </div>
+            <img class="img-modal " src="https://picsum.photos/301/225 ">
+            <div class="modal-texter ">
+                <p class="p-title2 ">La Ferrari ha generosamente premiato il suo staff per i <br> successi raggiunti nel 2018</p>
+                <div class="d-flex rrall ">
+                    <div class="col-6 d-flex rrfx ">
+                        <p class="comm ">172</p>&nbsp;
+                        <p class="comm2 ">Interazioni</p>
+                        <img class="ppl " src="https://picsum.photos/61/60 ">
+                        <img class="ppl " src="https://picsum.photos/62/60 ">
+                        <img class="ppl " src="https://picsum.photos/63/60 ">
+                        <img class="ppl " src="https://picsum.photos/64/60 ">
+                        <img class="ppl " src="https://picsum.photos/65/60 ">
+                    </div>
+                    <div class="col-6 d-flex rrdx ">
+                        <p class="comm ">1272</p>&nbsp;
+                        <p class="comm2 ">Like</p>
+                        <img class="ppl " src="https://picsum.photos/66/60 ">
+                        <img class="ppl " src="https://picsum.photos/67/60 ">
+                        <img class="ppl " src="https://picsum.photos/68/60 ">
+                        <img class="ppl " src="https://picsum.photos/69/60 ">
+                        <img class="ppl " src="https://picsum.photos/65/61 ">
+                    </div>
+
+                </div>
+            </div>
+            <div class="socialize d-flex ">
+                <div class="col-3 ml-1 ">
+                    <div class="d-flex ">
+                        <img class="ch mr-2 " src="./img/love.svg " width="20 " height="20 ">
+                        <p>Mi piace</p>
+                    </div>
+
+                </div>
+                <div class="col-3 marl ">
+                    <div class="d-flex ">
+                        <img class="ch mr-2 " src="./img/chat.svg " width="18 " height="18 ">
+                        <p>Commenta</p>
+                    </div>
+
+                </div>
+                <div class="col-3 marl2 ">
+                    <div class="d-flex ">
+                        <img class="mt-1 mr-2 " src="./img/arrow.png " width="20 " height="15 ">
+                        <p>Condividi</p>
+                    </div>
+
+                </div>
+                <div class="col-1 ">
+                    &nbsp;
+                </div>
+                <div class="col-1 ">
+                    &nbsp;
+                </div>
+                <div class="col-1 ">
+                    &nbsp;
+                </div>
+            </div>
+            <div class="modal-testo ">
+                <div class="commento1 d-flex ">
+                    <div class="col-2">
+                        <img class="avatar-commento " src="https://picsum.photos/61/60 ">
+                    </div>
+                    <div class="col-10">
+                        <p class="vignetta">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio architecto est porro modi sit amet incidunt aperiam dicta ipsum inventore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, consectetur.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="risposta d-flex ">
+                    <div class="col-10">
+                        <p class="risposta1 ">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet vel repellat eos itaque modi neque ad, iusto veritatis harum delectus?
+                        </p>
+                    </div>
+                    <div class="col-2">
+                        <img class="avatar-commento " src="https://picsum.photos/62/61 ">
+                    </div>
+
+                </div>
+            </div>
+            <div class="d-flex ">
+                <input type="text " placeholder="Messaggio "><button type="button " class="pubblica22 ">Pubblica</button>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <footer class="footer mt-auto py-3 bg-white">
+        <div class="container">
+            <!-- Footer -->
+
+            <!-- Footer Links -->
+            <div class="container-fluid text-center text-md-left">
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 mt-md-0 mt-3">
+
+                        <!-- Content -->
+                        <!-- <img src="./img/genialpages_black.png" width="200">
+              <p>Here you can use rows and columns to organize your footer content.</p>
+                    -->
+
+                        <!-- Copyright -->
+                    </div>
+                </div>
+                <!-- Grid row -->
+            </div>
+        </div>
+        <!-- Footer Links -->
+
+        <div class="footer-copyright text-center py-1">
+            <a href="https://mdbootstrap.com/education/bootstrap/" class="mr-1 mt-2 text-dark"> privacy</a>|<a href="https://mdbootstrap.com/education/bootstrap/" class="ml-1 mt-2 text-dark">Termini</a>
+        </div>
+        <!-- Copyright -->
+        <div class="footer-copyright1 text-center py-3">© Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/" class="text-dark"> Genial Brain All Rights Reserved
+                2019</a>
+        </div>
+
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/holder.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+
+    <script>
+        function disableNotify() {
+
+        }
+        $(".sett").click(function() {
+            $(".speech-bubble").css("display", "none");
+        });
+
+
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function(e) {
+                    $('#blah').attr('src', e.target.result);
+                }
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        $("#imgInp").change(function() {
+            readURL(this);
+        });
+
+
+
+
+        $(document).ready(function() {
+            function reorient(e) {
+                var portrait = (window.orientation % 180 == 0);
+                $("body > div").css("-webkit-transform", !portrait ? "rotate(-90deg)" : "");
+            }
+            window.onorientationchange = reorient;
+            window.setTimeout(reorient, 0);
+        });
+
+
+
+
+        $('.sett').click(function() {
+            $(this).toggleClass('clicked');
+        });
+
+
+        $("#menu-close ").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper ").toggleClass("active ");
+        });
+        $("#menu-toggle2 ").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper ").toggleClass("active ");
+        });
+    </script>
+
+
+
+</body>
+
+</html>

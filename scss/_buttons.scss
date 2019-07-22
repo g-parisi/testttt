@@ -1,0 +1,245 @@
+.btn-card {
+    background: none;
+    position: relative;
+    top: -115px;
+    left: 225px;
+    outline: none;
+    margin-top: -6px;
+    margin-bottom: 0rem;
+    margin-top: 26px!important;
+}
+
+.btn-card:focus {
+    outline: none;
+}
+
+.dropdown-toggle::after {
+    display: none;
+    outline: none;
+}
+
+.dropdown-toggle:focus {
+    outline: none;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btndot {
+    font-size: 30px;
+    font-weight: bold;
+    color: #c0c4d8;
+}
+
+.btn-blu {
+    border: 2px solid;
+    color: #ffffff;
+    display: inline-block;
+    font-family: SF-Pro-Text-Light;
+    font-size: 13px;
+    letter-spacing: 0.6px;
+    padding: 12px 40px 10px;
+    text-transform: uppercase;
+    background-color: #186ad9!important;
+}
+
+.btn-cards {
+    margin-top: 8px;
+    border-radius: 30px;
+}
+
+svg#play {
+    width: 80px;
+    margin: 120px auto;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    top: -36px;
+}
+
+.play {
+    background: transparent;
+    border: none;
+    width: 150px;
+    margin: 0 auto;
+    outline: none;
+    &:focus {
+        outline: none;
+    }
+}
+
+svg#play #triangle {
+    fill: rgba(22, 22, 22, 0);
+    transition: 500ms;
+    transform-origin: 50% 50%;
+}
+
+svg#play:hover #triangle {
+    fill: transparent;
+    transform-origin: 50% 50%;
+}
+
+svg #lineOne,
+svg #lineTwo {
+    transform-origin: 50% 50%;
+    transition: 1s;
+}
+
+svg:hover #lineOne {
+    transform: rotate(260deg);
+    -webkit-transform: rotate(260deg);
+    -moz-transform: rotate(260deg);
+    -o-transform: rotate(260deg);
+    transform-origin: 50% 50%;
+}
+
+svg:hover #lineTwo {
+    transform: rotate(-450deg);
+    transform-origin: 50% 50%;
+}
+
+.plus-button {
+    border: 2px solid white;
+    background-color: #186ad9;
+    font-size: 16px;
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 999px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    &:focus {
+        outline: none;
+    }
+    &:after,
+    &:before {
+        content: "";
+        display: block;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        outline: none;
+    }
+    &:before {
+        height: 1em;
+        width: 0.2em;
+    }
+    &:after {
+        height: 0.2em;
+        width: 1em;
+    }
+}
+
+.plus-button--large {
+    font-size: 22px;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    position: relative;
+    top: 40%;
+}
+
+.plus-button2 {
+    border: 1px solid #186ad9;
+    background-color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    padding: 10px 38px 8px;
+    color: #186ad9;
+    outline: none;
+    &:focus {
+        outline: none;
+    }
+}
+
+.card3 {
+    cursor: pointer;
+    outline: none;
+    &:focus {
+        outline: none;
+    }
+}
+
+.plus-button2-2,
+.btn-cards {
+    background-color: #186ad9;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    padding: 8px 26px 7px!important;
+    color: white;
+    outline: none;
+    margin-top: 7px;
+    &:focus {
+        outline: none;
+    }
+}
+
+.left-arrow {
+    position: relative;
+    left: -7px;
+    cursor: pointer;
+}
+
+.bottom-arrow {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    width: 6px;
+    margin-left: 10px;
+}
+
+.btn-blue-search {
+    border: 1px solid white;
+    background-color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    color: #186ad9;
+    margin-right: 200px;
+    padding: 8px 11px;
+    outline: 0;
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn-scrivi {
+    margin: 30px 22px;
+    border-radius: 30px;
+    text-align: left;
+    padding-left: 20px;
+    color: #777;
+    background: #f7f7f9;
+    border: 1px solid #cacaca;
+    min-width: 414px;
+    height: 36px;
+    left: -22px;
+    position: relative;
+    cursor: pointer;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        border: 1px solid #186ad9;
+    }
+}
+
+.plusser {
+    position: relative;
+    top: -3px;
+    width: 27px;
+}
