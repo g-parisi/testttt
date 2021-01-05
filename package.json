@@ -20,7 +20,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.17.1",
+    "axios": "^0.21.1",
     "bootstrap": "^4.1.1",
     "bulma": "^0.7.5",
     "cssgram": "^0.1.3",
